@@ -1,0 +1,95 @@
+html, body{
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+.App {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-bottom: 50px; 
+}
+
+.form-multilpe-fields{
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+
+
+.App-header td{
+  padding: 5px;
+}
+
+.App-header > *{
+  padding: 20px;
+}
+
+.submit-btn-container{
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+
+}
+.submit-btn-container button{
+  width: 200px;
+  height: 75px;
+  cursor: pointer;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.all-fields-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.single-field-container{
+  flex: 1 0 25%; /* explanation below */
+  margin: 5px;
+  height: 100px;
+  flex-direction: row;
+  padding: 15px;
+}
+.single-field-container label, .single-field-container input{
+  float: none; /* if you had floats before? otherwise inline-block will behave differently */
+  display: inline-block;
+  vertical-align: middle;   
+  width: 100%; 
+}
+
+.single-field-container input{
+  color: black;
+}
+
+.comparison-container button{
+  float: right;
+}
+.comparison-container span, .comparison-container h5{
+  display: inline-block;
+}
+
+.table{
+  text-align: center;
+  width: 100%;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
